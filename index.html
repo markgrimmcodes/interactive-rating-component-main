@@ -17,22 +17,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Rating state start -->
-
-    How did we do? Please let us know how we did with your support request. All
-    feedback is appreciated to help us improve our offering! 1 2 3 4 5 Submit
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
-
+    <main class="main">
+      <div class="container" id="rating">
+        <div id="star-wrap">
+          <img id="star" src="/images/icon-star.svg" />
+        </div>
+        <p id="how">How did we do?</p>
+        <p id="smalltext">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div id="rate">
+          <button class="number" id="one">1</button>
+          <button class="number" id="two">2</button>
+          <button class="number" id="three">3</button>
+          <button class="number" id="four">4</button>
+          <button class="number" id="five">5</button>
+        </div>
+        <button id="submit">SUBMIT</button>
+      </div>
+      <div class="container" id="thanks">
+        You selected
+        <!-- Add rating here -->
+        out of 5 Thank you! We appreciate you taking the time to give a rating.
+        If you ever need more support, don't hesitate to get in touch!
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

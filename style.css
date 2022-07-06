@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Overpass:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: snow;
+  font-family: Overpass;
+
+  --bg-color: hsl(216, 12%, 8%);
+  --light-grey: hsl(217, 12%, 63%);
+  --container-color: hsl(213, 19%, 18%);
+}
+.main {
+  min-width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#star-wrap {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.068);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#star {
+  transform: scale(0.7);
+}
+
+#rating {
+  background-image: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+  position: relative;
+  border: 1px solid hsl(217, 12%, 63%);
+  box-shadow: 2px 4px hsl(213, 19%, 18%);
+}
+#thanks {
+  position: absolute;
+  visibility: hidden;
+}
+#how {
+  font-size: 20px;
+}
+#smalltext {
+  opacity: 0.4;
+  font-size: 0.7em;
+}
+#submit {
+  all: unset;
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 0.6em;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  padding: 10px;
+}
+#rate {
+  display: flex;
+  gap: 1.5em;
+}
+
+.number {
+  all: unset;
+  border-radius: 50%;
+
+  width: 30px;
+  height: 30px;
+  background: hsl(217, 12%, 63%);
+  opacity: 0.5;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number:focus {
+  opacity: 1;
+  background: hsl(217, 12%, 63%);
+}
+.number:hover {
+  background: hsl(25, 97%, 53%);
+  opacity: 1;
+}
