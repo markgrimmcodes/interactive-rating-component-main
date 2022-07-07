@@ -6,18 +6,27 @@ const two = document.querySelector("#two");
 const three = document.querySelector("#three");
 const four = document.querySelector("#four");
 const five = document.querySelector("#five");
-const numbers = document.querySelector(".number");
+const numbers = document.querySelectorAll(".number");
 let outof = document.querySelector("#outof");
 
 let numOfStars = 0;
 
-/*for (let num of numbers) {
+numbers.forEach((num) => {
+  num.addEventListener("click", () => {
+    numOfStars = Number(num.textContent);
+    console.log(numOfStars);
+  });
+});
+
+/*for (let num of numbersItalien) {
+  console.log(num);
   num.addEventListener("click", () => {
     numOfStars = num[i] + 1;
+    console.log(numOfStars);
   });
 }*/
 
-one.addEventListener("click", () => {
+/*one.addEventListener("click", () => {
   numOfStars = 1;
   console.log(numOfStars);
 });
@@ -37,7 +46,7 @@ five.addEventListener("click", () => {
   numOfStars = 5;
   console.log(numOfStars);
 });
-
+*/
 console.log(numOfStars);
 
 submit.addEventListener("click", () => {
