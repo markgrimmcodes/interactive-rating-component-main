@@ -49,8 +49,22 @@
   box-shadow: 2px 4px hsl(213, 19%, 18%);
 }
 #thanks {
+  background-image: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+  position: relative;
+  border: 1px solid hsl(217, 12%, 63%);
+  box-shadow: 2px 4px hsl(213, 19%, 18%);
   position: absolute;
+  text-align: center;
   visibility: hidden;
+  transform: scale(0);
+  transition: 0.3s ease;
 }
 #how {
   font-size: 20px;
@@ -69,10 +83,19 @@
   letter-spacing: 1.5px;
   font-weight: bold;
   padding: 10px;
+  transition: 0.2s ease;
 }
 #rate {
   display: flex;
   gap: 1.5em;
+}
+
+#submit:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+#submit:active {
+  transform: scale(1);
 }
 
 .number {
@@ -87,6 +110,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .number:focus {
@@ -96,4 +120,26 @@
 .number:hover {
   background: hsl(25, 97%, 53%);
   opacity: 1;
+}
+
+#handy {
+  height: 80px;
+}
+#thick {
+  text-align: center;
+}
+#outof {
+  color: hsl(25, 97%, 53%, 0.5);
+  font-size: 12px;
+  background: hsl(217, 12%, 63%, 0.1);
+  border-radius: 20px;
+  width: 150px;
+  margin: auto;
+}
+#appreciate {
+  opacity: 0.6;
+  font-size: 12px;
+}
+#thankyou {
+  font-size: 1.1em;
 }
